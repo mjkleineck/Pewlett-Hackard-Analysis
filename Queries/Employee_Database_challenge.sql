@@ -46,3 +46,14 @@ ON (em.emp_no = ti.emp_no)
 WHERE (de.to_date = '9999-01-01')
 	AND (em.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY em.emp_no;
+
+-- Number of mentorship eligible employees by title
+SELECT COUNT(emp_no), title
+INTO mentorship_titles
+FROM mentorship_eligibilty
+GROUP BY title
+ORDER BY count DESC;
+
+-- Number of retiring employees
+SELECT COUNT(emp_no)
+FROM unique_titles;
