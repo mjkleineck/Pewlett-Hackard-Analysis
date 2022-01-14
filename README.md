@@ -18,7 +18,7 @@ Below is the query ran to calculate the the number of positions needing to be fi
 The total number of employees retiring is 90,398.
 
 ### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-The follow query will return the total number of eligible mentors by position.
+The following query will return the total number of eligible mentors by position.
 
 ![Number of eligible mentors](https://github.com/mjkleineck/Pewlett-Hackard-Analysis/blob/main/Queries/mentorship_emps.png)
 
